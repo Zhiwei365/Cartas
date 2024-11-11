@@ -4,10 +4,11 @@ class Mano:
         self.cartas = []
         self.valor = 0
     def añadirCarta(self,carta):
+        self.valor = 0
         self.cartas.append(carta)
         for carta in self.cartas:
-            if carta.valor in ["Jota""Reina""Rey"]:
-                self.valor = 10
+            if carta.valor in ["Jota","Reina","Rey"]:
+                self.valor += 10
             elif carta.valor == "As":
                 self.valor += 11
             else:

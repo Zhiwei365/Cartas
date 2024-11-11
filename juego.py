@@ -12,7 +12,7 @@ class Juego:
         print(f"Total: {manoJugador.valor}")
         while manoJugador.valor < 21:
             accion = input("¿Quieres PEDIR carta o PASAR?")
-            if accion == "pedir":
+            if accion == "p":
                 manoJugador.añadirCarta(self.baraja.sacarCarta())
                 print(f"Tu mano es {manoJugador.cartas}")
                 print(f"Total: {manoJugador.valor}")
